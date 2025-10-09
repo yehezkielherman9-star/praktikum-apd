@@ -20,7 +20,7 @@ if jabatan_karyawan == "peracik petasan":
         bayaran_perjam = 15000
         bayaran_perlembur = 10000
 
-if jabatan_karyawan == "pengantar petasan":
+elif jabatan_karyawan == "pengantar petasan":
     if hari_kerja >= 16 and jam_kerja >= 5 and jumlah_perlembur >= 4: 
         bayaran_perjam = 20000
         bayaran_perlembur = 15000
