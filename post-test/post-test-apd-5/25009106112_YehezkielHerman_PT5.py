@@ -103,7 +103,8 @@ while True:
                         else:
                             print("===== UPDATE CHARACTER =====")
                             for i, char in enumerate(characterepep_bro):
-                                print(f"{i+1}. {char[0]} | {char[1]} | {char[2]}")
+                                print(f"{i+1:<4}| {char[0]:<20}| {char[1]:<25}| {char[2]:<10}|")
+                                print("-" * 65)
 
                             nomorchar = input("\nPilih nomor character nya yang mau diupdate: ").strip()
                             if not nomorchar.isdigit():
@@ -130,7 +131,8 @@ while True:
                         else:
                             print("===== HAPUS CHARACTER =====")
                             for i, char in enumerate(characterepep_bro):
-                                print(f"{i+1}. {char[0]} | {char[1]} | {char[2]}")
+                                print(f"{i+1:<4}| {char[0]:<20}| {char[1]:<25}| {char[2]:<10}|")
+                                print("-" * 65)
                             nomorchar = input("\nPilih nomor character nya yang mau dihapus: ").strip()
                             if not nomorchar.isdigit():
                                 print("pake angka dong")
