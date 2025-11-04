@@ -1,5 +1,7 @@
 from data import dataepep_bro
-from utils import clear
+from clean import clear
+from menu_admin import menu_admin
+from menu_user import menu_user
 
 def login():
     clear()
@@ -10,11 +12,14 @@ def login():
     if username in dataepep_bro and dataepep_bro[username]["password"] == password:
         print(f"Selamat datang, {username}!")
         input("Tekan Enter untuk lanjut...")
-        return dataepep_bro[username]
+        user = dataepep_bro[username]
+        if user["role"] == "ADMIN":
+            menu_admin()
+        else:
+            menu_user(username)
     else:
         print("Username atau password salah!")
         input("Tekan Enter untuk coba lagi...")
-        return None
 
 def register():
     clear()

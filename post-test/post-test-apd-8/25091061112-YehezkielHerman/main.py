@@ -1,31 +1,25 @@
-from utils import clear
+from clean import clear
 from autentikasi import login, register
-from menu_admin import menu_admin
-from menu_user import menu_user
 
 def main():
     while True:
         clear()
-        print("=== Selamat Datang di Sistem Free Fire Epep ===")
+        print("===== SISTEM LIST CHARACTER GAME EPEP =====")
         print("1. Login")
         print("2. Register")
         print("3. Keluar")
-        pilihan = input("Pilih menu: ")
+        pilih = input("Pilih menu: ").strip()
 
-        if pilihan == "1":
-            user = login()
-            if user:
-                if user["role"] == "ADMIN":
-                    menu_admin()
-                else:
-                    menu_user()
-        elif pilihan == "2":
+        if pilih == "1":
+            login()
+        elif pilih == "2":
             register()
-        elif pilihan == "3":
-            print("Terima kasih telah menggunakan program ini!")
+        elif pilih == "3":
+            clear()
+            print("Terima kasih sudah menggunakan program ini bro!")
             break
         else:
-            print("Pilihan tidak valid!")
-            input("Tekan Enter untuk lanjut...")
+            print("Pilihan tidak ada bro!")
+            input("\nTekan Enter untuk kembali...")
 
 main()
