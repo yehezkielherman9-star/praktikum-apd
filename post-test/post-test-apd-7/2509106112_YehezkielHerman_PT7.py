@@ -62,7 +62,7 @@ def menu_admin():
             elif pilih_admin == "3":
                 clear()
                 if not characterepep_bro:
-                    print("Belum ada character nya untuk diubah bro!")
+                    print("Belum ada character nya untuk diubah dong bro")
                     input("\nTekan Enter untuk kembali...")
                 else:
                     print("===== UPDATE CHARACTER =====")
@@ -117,7 +117,7 @@ def menu_admin():
                 input("\nTekan Enter untuk kembali...")
 
     except ValueError:
-        print("Terjadi kesalahan di menu admin: input harus berupa angka bro!")
+        print("input harus berupa angka dong bro")
         input("\nTekan Enter untuk kembali...")
 
 
@@ -152,7 +152,7 @@ def menu_user(username):
                 input("\nTekan Enter untuk kembali...")
 
     except ValueError:
-        print("Terjadi kesalahan di menu user: input harus berupa angka bro!")
+        print("Terjadi kesalahan di menu user: input harus berupa angka dong bro")
         input("\nTekan Enter untuk kembali...")
 
 
@@ -180,7 +180,7 @@ def login():
             else:
                 menu_user(username)
     except ValueError:
-        print("Terjadi kesalahan saat login: input tidak valid bro!")
+        print("Terjadi kesalahan saat login: input tidak valid dong bro")
         input("\nTekan Enter untuk kembali...")
 
 
@@ -199,7 +199,7 @@ def register():
 
         input("\nTekan Enter untuk kembali...")
     except ValueError:
-        print("Terjadi kesalahan saat register: input tidak valid bro!")
+        print("Terjadi kesalahan saat register: input tidak valid dong bro")
         input("\nTekan Enter untuk kembali...")
 
 
@@ -225,7 +225,7 @@ def main():
                 print("Pilihan tidak ada kocakk")
                 input("\nTekan Enter untuk kembali...")
     except ValueError:
-        print("Terjadi kesalahan di menu utama: input harus angka bro!")
+        print("Terjadi kesalahan di menu utama: input harus angka dong bro")
         input("\nTekan Enter untuk kembali...")
 
 
